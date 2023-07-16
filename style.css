@@ -123,47 +123,11 @@ nav li a {
     color: #727272;
     font-size: 16px;
     font-weight: 400;
-
-
 }
-
-@media screen and (max-width:576px) {
-    .team-container {
-        flex-direction: column;
-
-    }
-
-    .team-content {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .team-img-content {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-}
-
-/* medium device */
-@media screen and (min-width:576px)and(max-width:960px) {
-    .team-container {
-        flex-direction: column;
-    }
-
-    .team-content {
-        padding: 50px;
-    }
-
-    .team-img-content {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-}
-
 /* end team section */
 /* start feature */
 
-/* .feature {
+ .feature {
     display: flex;
     margin-top: 120px;
     gap: 100px;
@@ -208,22 +172,6 @@ nav li a {
     bottom: 100px;
     color: #fff;
 }
-@media screen and (max-width:576px) {
-
-    .feature{
-        flex-direction: column;
-    }
-    .feature-img{
-        width: 90%;
-        margin-left: 0;
-    }
-    .ten-years-badge {
-        position: static;
-        max-width: 300px;
-} */
-/* end Feature */
-
-/* Star facts section */
 .facts-card-container {
     display: flex;
     justify-content: space-around;
@@ -249,9 +197,6 @@ nav li a {
     font-size: 20px;
     font-weight: 600;
 }
-
-/* end facts card */
-/* strat sponsors */
 .sponsors{
     text-align: center;
 }
@@ -268,7 +213,6 @@ nav li a {
 /* end sponsors */
 
 
-
 /* Media Query */
 @media screen and (max-width:576px) {
 
@@ -277,14 +221,39 @@ nav li a {
         padding: 20px;
     }
 
-    nav,.facts-card-container, .sponsors-img-container{
+    nav, .facts-card-container, .sponsors-img-container{
         flex-direction: column;
+    }
+    .team-container {
+        flex-direction: column;
+
+    }
+
+    .team-content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .team-img-content {
+        grid-template-columns: repeat(1, 1fr);
     }
     .facts-card-container{
         padding-left: 20px;
         padding-right: 20px;
         gap: 20px;
     }
+    
+    .feature{
+        flex-direction: column;
+    }
+    .feature-img{
+        width: 90%;
+        margin-left: 0;
+    }
+    .ten-years-badge {
+        position: static;
+        max-width: 300px;
+} 
 
 }
 
@@ -293,9 +262,15 @@ nav li a {
     header {
         padding: 50px;
     }
+    .team-content {
+        padding: 50px;
+    }
 
+    .team-img-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
     nav,
-    .team-container,
+    .feature,.team-container,
     .facts-card-container,.sponsors-img-container {
         flex-direction: column;
     }
